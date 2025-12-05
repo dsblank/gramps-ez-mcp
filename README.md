@@ -23,6 +23,19 @@ The server provides tools for:
 
 ## Configuration
 
+### Setup
+
+You will need the following:
+
+1. An API key from a model provider (such as OpenAI, Anthropic, etc)
+2. Gramps installed and working with a family tree (may also need `pip install gramps`)
+
+For example, you might have in your environment:
+
+```
+export OPENAI_API_KEY="sk-..."
+```
+
 ### Basic Configuration
 
 The MCP server can be configured using command-line arguments or through MCP client configuration files.
@@ -56,7 +69,9 @@ gramps-ez-mcp "Gramps Example" --transport sse --port 9000
 
 ### MCP Client Configuration
 
-For use with MCP-compatible clients (like `ez-mc-chatbot`), create a configuration file:
+For use with MCP-compatible clients (like `ez-mc-chatbot`, Cursor, etc), you will need a configuration file.
+
+For example, for `ez-mcp-chatbot`:
 
 **Example: `ez-config.json`**
 
