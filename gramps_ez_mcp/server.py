@@ -113,6 +113,10 @@ def parse_args():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(description="Gramps EZ MCP Server")
     parser.add_argument(
+        "dbname",
+        help="Name of the Gramps database tree to open",
+    )
+    parser.add_argument(
         "--transport",
         choices=["stdio", "sse"],
         default="stdio",
@@ -128,11 +132,6 @@ def parse_args():
         type=int,
         default=8000,
         help="Port for SSE transport (default: 8000)",
-    )
-    parser.add_argument(
-        "--dbname",
-        default=None,
-        help="Name of the Gramps database tree to open (default: 'Gramps Example')",
     )
     return parser.parse_args()
 
@@ -257,8 +256,7 @@ async def main():
 
     try:
         initialize_session(args.dbname)
-        dbname_used = args.dbname if args.dbname else "Gramps Example"
-        print(f"✓ Gramps EZ MCP session initialized with database: {dbname_used}")
+        print(f"✓ Gramps EZ MCP session initialized with database: {args.dbname}")
     except Exception as e:
         print(f"⚠️  Gramps EZ MCP session initialization failed: {e}")
 
