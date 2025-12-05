@@ -8,7 +8,7 @@
       "name": "gramps-ez-mcp",
       "description": "Gramps EZ MCP server for genealogy chats",
       "command": "gramps-ez-mcp",
-      "args": []
+      "args": ["--dbname", "Gramps Example"]
     }
   ]
 }
