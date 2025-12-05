@@ -135,6 +135,23 @@ The `ez-mc-chatbot` is a command-line chatbot that can interact with MCP servers
    - "Who are the children of John?"
    - "Find the mother of Sarah Anderson"
 
+### LLM Logging, Debugging, and Observability
+
+If you would like for the `ez-mcp-chatbot` to create a log of what the MCP server is doing, you can log the interactions
+with the LLM by doing the following:
+
+```
+pip install opik
+```
+Then you can get an OPIK_API_KEY from https://www.comet.com/docs/opik/quickstart
+and set it:
+
+```
+export OPIK_API_KEY="..."
+```
+
+<img width="1853" height="1048" alt="image" src="https://github.com/user-attachments/assets/13063484-8544-4464-ae5a-93d750cc67ae" />
+
 ### Example Conversation
 
 ```
