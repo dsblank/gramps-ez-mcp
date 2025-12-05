@@ -102,7 +102,7 @@ The `ez-mc-chatbot` is a command-line chatbot that can interact with MCP servers
 
 1. **Install ez-mc-chatbot** (if not already installed):
    ```bash
-   pip install ez-mc-chatbot
+   pip install ez-mcp-toolbox
    ```
 
 2. **Create a configuration file** (e.g., `examples/ez-config.json`):
