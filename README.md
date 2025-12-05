@@ -69,7 +69,7 @@ gramps-ez-mcp "Gramps Example" --transport sse --port 9000
 
 ### MCP Client Configuration
 
-For use with MCP-compatible clients (like `ez-mc-chatbot`, Cursor, etc), you will need a configuration file.
+For use with MCP-compatible clients (like `ez-mcp-chatbot`, Cursor, etc), you will need a configuration file.
 
 For example, for `ez-mcp-chatbot`:
 
@@ -96,11 +96,11 @@ Replace `"Gramps Example"` with your actual Gramps database name.
 
 ## Usage Examples
 
-### Using with ez-mc-chatbot
+### Using with ez-mcp-chatbot
 
-The `ez-mc-chatbot` is a command-line chatbot that can interact with MCP servers. Here's how to use it with `gramps-ez-mcp`:
+The `ez-mcp-chatbot` is a command-line chatbot that can interact with MCP servers. Here's how to use it with `gramps-ez-mcp`:
 
-1. **Install ez-mc-chatbot** (if not already installed):
+1. **Install ez-mcp-chatbot** (if not already installed):
    ```bash
    pip install ez-mcp-toolbox
    ```
@@ -125,7 +125,7 @@ The `ez-mc-chatbot` is a command-line chatbot that can interact with MCP servers
 
 3. **Run the chatbot**:
    ```bash
-   ez-mc-chatbot --config examples/ez-config.json
+   ez-mcp-chatbot --config examples/ez-config.json
    ```
 
 4. **Example queries you can ask**:
