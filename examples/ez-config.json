@@ -1,0 +1,14 @@
+{
+  "model": "openai/gpt-4o-mini",
+  "model_parameters": {
+    "temperature": 0.0
+  },
+  "mcp_servers": [
+    {
+      "name": "gramps-ez-mcp",
+      "description": "Gramps EZ MCP server for genealogy chats",
+      "command": "gramps-ez-mcp",
+      "args": []
+    }
+  ]
+}
